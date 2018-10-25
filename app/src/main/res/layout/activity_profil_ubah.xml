@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ProfilData.ProfilUbahActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubah Profil"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/tv_name_profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_jk_edit"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Jenis Kelamin(P/L)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jenis Kelamin(P/L)"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_tempat_lahir_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Tempat Lahir"
+            android:hint="Tempat Lahir"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_tanggal_lahir_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            android:inputType="date"
+            app:met_floatingLabelText="Tanggal Lahir(hh-bb-yyyy)"
+            android:hint="Tanggal Lahir(hh-bb-yyyy)"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_masuk_kuliah_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            android:inputType="number"
+            app:met_floatingLabelText="Tahun Masuk Kuliah (yyyy)"
+            android:hint="Tahun Masuk Kuliah (yyyy)"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_lulus_kuliah_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Tahun Lulus Kuliah (yyyy)"
+            android:inputType="number"
+            android:hint="Tahun Lulus Kuliah (yyyy)"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_IPK_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="IPK"
+            android:inputType="numberDecimal"
+            android:hint="IPK"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_alamat_rumah_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Alamat Rumah"
+            android:hint="Alamat Rumah"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_nama_instansi_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Nama Instansi"
+            android:hint="Nama Instansi"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_alamat_instansi_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Alamat Instansi"
+            android:hint="Alamat Instansi"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_hp_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            android:inputType="number"
+            app:met_floatingLabelText="HP"
+            android:hint="HP"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_jabatan_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Jabatan"
+            android:hint="Jabatan"/>
+
+        <TextView
+            android:id="@+id/tv_informasi_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Media Memperoleh Informasi Almamater"/>
+        <Spinner
+            android:id="@+id/sp_info_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pendidikan_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Pendidikan Terakhir"/>
+        <Spinner
+            android:id="@+id/sp_pendidikan_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_pekerjaan_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Pekerjaan Pertama"/>
+        <Spinner
+            android:id="@+id/sp_pekerjaan_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_waktu_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lama Waktu Menunggu Pekerjaan Pertama"/>
+        <Spinner
+            android:id="@+id/sp_waktu_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gaji_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Gaji Pertama"/>
+        <Spinner
+            android:id="@+id/sp_gaji_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/submit_profil_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Submit"
+            android:layout_gravity="right"/>
+
+
+    </LinearLayout>
+</ScrollView>
